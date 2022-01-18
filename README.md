@@ -1,47 +1,10 @@
 # az-manipulator
 
-NOTES: Do this to install mayavi for visualizing pointcloud data.
-I was only able to succeed by compiling it from source.
+Setup instructions:
+1. Initialize conda environment `conda env create`
+2. Change the user_policy.py file to run the desired policy
+3. Run the evaluation `python mani_skill/tools/evaluate_policy.py --env=<desired-env> --vis`
 
-```
-git clone https://github.com/enthought/mayavi.git
-cd mayavi
-python -m pip install vtk==9.0.1 numpy  # these are required to build mayavi
-python -m pip install .[app]  # this will install mayavi with all of the necessary requirements/dependencies
-```
-
-install other dependencies, PCL, Open-CV, and PyQt5 for visualizing point clouds
-```shell
-sudo apt install libpcl-dev
-pip install PyQt5
-sudo apt install libopencv-dev python3-opencv
-```
-
-Need to add grasp/gpd submodule:
-```shell
-cd az-manipulator
-git submodule add git@github.com:aidan-curtis/gpd_python_interface.git grasp/gpd
-cd grasp/gpd
-mkdir build
-cd build
-cmake ..
-make -j 32
-cd ../..
-python save_pointcloud.py
-python visualize_pointcloud.py
-```
-## Test our controller
-
-```shell
-cd az-manipulator
-PYTHONPATH=/:$PYTHONPATH python mani_skill/tools/evaluate_policy.py --env OpenCabinetDrawer-v0
-```
-
-If you encounter an error with visualization, you may need to downgrade your opencv
-
-```shell
-pip3 install opencv-python==4.1.2.30
-```
 
 Following the instructions in [ManiSkill evaluation](https://github.com/haosulab/ManiSkill#evaluation), our approach is written in `az-manipulator/user_solution.py`. It imports some functions that I put together based on your `visualize_pointcloud.py` and `control_arm.py`
 
