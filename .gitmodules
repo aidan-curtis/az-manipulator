@@ -1,0 +1,6 @@
+[submodule "grasp/gpd"]
+	path = grasp/gpd
+	url = git@github.com:aidan-curtis/gpd_python_interface.git
+[submodule "pybullet-planning"]
+	path = pybullet-planning
+	url = https://github.com/caelan/pybullet-planning.git

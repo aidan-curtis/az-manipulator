@@ -1,0 +1,13 @@
+temp/*
+__pycache__/
+*.pyc
+.idea/
+*.log
+*.ini
+*.csv
+
+mani_skill/tools/partnet-mobility-dataset/
+partnet-mobility-dataset/
+drake_examples/temp/
+partnet-for-drake/
+**/__pycache__
