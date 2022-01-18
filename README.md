@@ -2,7 +2,7 @@
 
 Description
 
-This project is our solution to the Sapien Maniskill competition, and our final project for 6.843 robotic manipulation. You can find a video describing our solution here: https://youtu.be/vzNUCs3RGNY?t=4208
+This project is our (Zhutian Yang & Aidan Curtis) solution to the Sapien Maniskill competition, and our final project for 6.843 robotic manipulation. You can find a video describing our solution here: https://youtu.be/vzNUCs3RGNY?t=4208
 
 Setup instructions:
 1. Initialize conda environment `conda env create`
