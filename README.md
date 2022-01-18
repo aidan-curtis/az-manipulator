@@ -1,5 +1,9 @@
 # az-manipulator
 
+Description
+
+This project is our solution to the Sapien Maniskill competition, and our final project for 6.843 robotic manipulation. You can find a video describing our solution here: https://youtu.be/vzNUCs3RGNY?t=4208
+
 Setup instructions:
 1. Initialize conda environment `conda env create`
 2. Change the user_policy.py file to run the desired policy
